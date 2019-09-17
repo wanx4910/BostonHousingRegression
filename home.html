@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Boston Housing Price Prediction Web App </title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home1.css')}}">
+</head>
+<body>
+<h1> Boston Price Prediction </h1>
+<p> Fill in the information in the boxes below to obtain a prediction of your house price</p>
+<div>
+<form action="/result" method="POST">
+
+    <label>Per Capita Crime rate by town</label>
+    <input type="text" name="CRIM">
+    <br>
+    <label>Proportion of residential land zoned for lots over 25,000 sq.ft.</label>
+    <input type="text" name="ZN">
+    <br>
+    <label>Proportion of non-retail business acres per town</label>
+    <input type="text" name="INDUS">
+    <br>
+    <label>Are you near the Charles River? If yes please input 1, If no please input 0</label>
+    <input type="text" name="CHAS">
+    <br>
+    <label>Nitric Oxides concentration (parts per 10 million)</label>
+    <input type="text" name="NOX">
+    <br>
+    <label>Average number of rooms per dwelling</label>
+    <input type="text" name="RM">
+    <br>
+    <label>Proportion of owner-occupied units built prior to 1940</label>
+    <input type="text" name="AGE">
+    <br>
+    <label>Weighted Distances to five Boston employment centers</label>
+    <input type="text" name="DIS">
+    <br>
+    <label>Index of accessibility to radial highways</label>
+    <input type="text" name="RAD">
+    <br>
+    <label>Pupil-teacher ratio by town</label>
+    <input type="text" name="PTRATIO">
+    <br>
+    <label>Proportion of African American residents by town (1000*(Bk-0.63)</label>
+    <input type="text" name="B">
+    <br>
+    <label>% Lower status of the population</label>
+    <input type="text" name="LSTAT">
+    <input type="submit" value="Submit">
+    
+</form> 
+</div>
+</body>
+
+</html>
